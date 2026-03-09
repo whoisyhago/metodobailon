@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raquel Bailón | Coaching Fitness</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#ff4d6d;
+--dark:#0f0f0f;
+--light:#f7f7f7;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+color:#222;
+background:white;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+z-index:999;
+}
+
+nav .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:var(--primary);
+color:white;
+padding:14px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.steps{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.step{
+background:var(--light);
+padding:30px;
+border-radius:10px;
+flex:1;
+min-width:250px;
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.testimonial{
+background:var(--light);
+padding:30px;
+border-radius:10px;
+}
+
+.faq-item{
+border-bottom:1px solid #eee;
+padding:20px 0;
+cursor:pointer;
+}
+
+.faq-answer{
+display:none;
+padding-top:10px;
+color:#555;
+}
+
+.cta{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:40px;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:38px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container">
+<strong>Raquel Bailón</strong>
+<div>
+<a href="#programa">Programa</a>
+<a href="#resultados">Resultados</a>
+<a href="#faq">FAQ</a>
+<a href="#contacto">Contacto</a>
+</div>
+</div>
+</nav>
+
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Transforma tu cuerpo y tu mentalidad</h1>
+
+<p>Entrenamiento, nutrición y hábitos sostenibles.</p>
+
+<a class="btn" href="#contacto">Empieza ahora</a>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container about">
+
+<img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2">
+
+<div>
+
+<h2>Hola, soy Raquel</h2>
+
+<p>
+Ayudo a mujeres a mejorar su físico, su energía
+y su relación con la comida mediante hábitos
+sostenibles y entrenamiento inteligente.
+</p>
+
+<p>
+Mi objetivo es que consigas resultados reales
+sin dietas extremas ni métodos imposibles.
+</p>
+
+<a class="btn" href="#contacto">Quiero empezar</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="programa" style="background:#fafafa">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Los 3 pilares del programa</h2>
+</div>
+
+<div class="features">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+<h3>Nutrición</h3>
+<p>Aprende a comer mejor sin prohibiciones.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b6">
+<h3>Entrenamiento</h3>
+<p>Rutinas diseñadas para lograr resultados reales.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+<h3>Mentalidad</h3>
+<p>Construye disciplina y hábitos duraderos.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Cómo funciona</h2>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Evaluación</h3>
+<p>Analizamos tu punto de partida y objetivos.</p>
+</div>
+
+<div class="step">
+<h3>2. Plan personalizado</h3>
+<p>Entrenamiento y nutrición adaptados a ti.</p>
+</div>
+
+<div class="step">
+<h3>3. Seguimiento</h3>
+<p>Acompañamiento durante todo el proceso.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="resultados" style="background:#fafafa">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Resultados reales</h2>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
+<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a">
+<img src="https://images.unsplash.com/photo-1549575815-df8c33c64b7b">
+<img src="https://images.unsplash.com/photo-1517964603305-11c0f6f66012">
+<img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186">
+<img src="https://images.unsplash.com/photo-1518611012118-fd9d3df7e0d6">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Testimonios</h2>
+</div>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"He perdido 8kg sin dietas locas y me siento mejor que nunca."</p>
+<strong>Laura</strong>
+</div>
+
+<div class="testimonial">
+<p>"Ahora tengo energía, disciplina y confianza."</p>
+<strong>Marta</strong>
+</div>
+
+<div class="testimonial">
+<p>"No solo cambió mi cuerpo, cambió mi mentalidad."</p>
+<strong>Ana</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Preguntas frecuentes</h2>
+</div>
+
+<div class="faq-item">
+<h4>¿Necesito experiencia entrenando?</h4>
+<div class="faq-answer">No. El programa se adapta a cualquier nivel.</div>
+</div>
+
+<div class="faq-item">
+<h4>¿Incluye nutrición?</h4>
+<div class="faq-answer">Sí, recibirás pautas nutricionales adaptadas.</div>
+</div>
+
+<div class="faq-item">
+<h4>¿Cuándo veré resultados?</h4>
+<div class="faq-answer">Los primeros cambios suelen aparecer en pocas semanas.</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contacto" class="cta">
+
+<h2>Empieza tu transformación</h2>
+
+<p>Plazas limitadas cada mes.</p>
+
+<br>
+
+<a class="btn" href="https://instagram.com/raquellbailon">Enviar mensaje en Instagram</a>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Raquel Bailón Coaching</p>
+
+<p>Instagram: @raquellbailon</p>
+
+</footer>
+
+
+
+<script>
+
+document.querySelectorAll(".faq-item").forEach(item=>{
+item.addEventListener("click",()=>{
+let answer=item.querySelector(".faq-answer")
+answer.style.display=
+answer.style.display==="block"?"none":"block"
+})
+})
+
+</script>
+
+</body>
+</html>
