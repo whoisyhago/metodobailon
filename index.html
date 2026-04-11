@@ -1,483 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raquel Bailón | Coaching Fitness</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- https://gitlab.com/yhagorumsam-group/metodobailon -->
-
-
-
-<style>
-
-:root{
---primary:#ff4d6d;
---dark:#0f0f0f;
---light:#f7f7f7;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-
-body{
-color:#222;
-background:white;
-line-height:1.6;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-z-index:999;
-}
-
-nav .container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 0;
-}
-
-nav a{
-text-decoration:none;
-color:#333;
-margin-left:20px;
-font-weight:500;
-}
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438");
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-background:var(--primary);
-color:white;
-padding:14px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-section{
-padding:100px 0;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:60px;
-}
-
-.section-title h2{
-font-size:38px;
-}
-
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:15px;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-}
-
-.card{
-background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:20px;
-}
-
-.steps{
-display:flex;
-flex-wrap:wrap;
-gap:30px;
-justify-content:center;
-}
-
-.step{
-background:var(--light);
-padding:30px;
-border-radius:10px;
-flex:1;
-min-width:250px;
-text-align:center;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.testimonial{
-background:var(--light);
-padding:30px;
-border-radius:10px;
-}
-
-.faq-item{
-border-bottom:1px solid #eee;
-padding:20px 0;
-cursor:pointer;
-}
-
-.faq-answer{
-display:none;
-padding-top:10px;
-color:#555;
-}
-
-.cta{
-background:var(--dark);
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:40px;
-font-size:14px;
-}
-
-@media(max-width:900px){
-
-.hero h1{
-font-size:38px;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método Bailón | Raquel Bailón Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
+<!-- NAV -->
 <nav>
-<div class="container">
-<strong>Raquel Bailón</strong>
-<div>
-<a href="#programa">Programa</a>
-<a href="#resultados">Resultados</a>
-<a href="#faq">FAQ</a>
-<a href="#contacto">Contacto</a>
-</div>
-</div>
+  <a class="nav-logo" href="#">Método<span>Bailón</span></a>
+  <div class="nav-links">
+    <a href="#programa">Programa</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#faq">FAQ</a>
+    <a class="nav-cta" href="#contacto">Empezar ahora</a>
+  </div>
 </nav>
 
-
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-text">
+    <span class="hero-tag">Coaching Fitness · Online & Presencial</span>
+    <h1>Tu mejor versión <em>empieza aquí</em></h1>
+    <p class="hero-sub">
+      Entrenamiento personalizado, nutrición sin prohibiciones y la mentalidad que necesitas para transformar tu cuerpo de forma sostenible.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contacto">Quiero empezar</a>
+      <a class="btn-secondary" href="#programa">Ver el programa</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">+200</div>
+        <div class="stat-label">Alumnas transformadas</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Pilares del método</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Personalizado</div>
+      </div>
+    </div>
+  </div>
 
-<div class="container">
-
-<h1>Transforma tu cuerpo y tu mentalidad</h1>
-
-<p>Entrenamiento, nutrición y hábitos sostenibles.</p>
-
-<a class="btn" href="#contacto">Empieza ahora</a>
-
-</div>
-
+  <div class="hero-image">
+    <div class="hero-img-wrap">
+      <img src="raquelwalking.png" alt="Raquel Bailón">
+    </div>
+    <div class="hero-badge">
+      <div class="badge-icon">💪</div>
+      <div>
+        <div class="badge-text">Resultados reales</div>
+        <div class="badge-sub">Sin dietas extremas</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<section>
-
-<div class="container about">
-
-<img src="https://github.com/whoisyhago/metodobailon/raw/main/raquelpija.png">
-
-<div>
-
-<h2>Hola, soy Raquel</h2>
-
-<p>
-Ayudo a mujeres a mejorar su físico, su energía
-y su relación con la comida mediante hábitos
-sostenibles y entrenamiento inteligente.
-</p>
-
-<p>
-Mi objetivo es que consigas resultados reales
-sin dietas extremas ni métodos imposibles.
-</p>
-
-<a class="btn" href="#contacto">Quiero empezar</a>
-
-</div>
-
-</div>
-
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="about">
+    <div class="about-img">
+      <img src="raquelpija.png" alt="Raquel Bailón coaching">
+      <div class="about-img-accent"></div>
+    </div>
+    <div class="about-text">
+      <span class="label">Sobre mí</span>
+      <h2>Hola, soy Raquel</h2>
+      <p>
+        Ayudo a mujeres a mejorar su físico, su energía y su relación con la comida mediante hábitos sostenibles y entrenamiento inteligente.
+      </p>
+      <p>
+        Mi objetivo es que consigas resultados reales sin dietas extremas ni métodos imposibles. Porque el cambio que dura es el que se construye desde dentro.
+      </p>
+      <div class="about-pills">
+        <span class="pill">Entrenamiento funcional</span>
+        <span class="pill">Nutrición flexible</span>
+        <span class="pill">Hábitos sostenibles</span>
+        <span class="pill">Mentalidad positiva</span>
+      </div>
+      <a class="btn-primary" href="#contacto">Quiero trabajar con Raquel</a>
+    </div>
+  </div>
 </section>
 
-
-
-<section id="programa" style="background:#fafafa">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Los 3 pilares del programa</h2>
-</div>
-
-<div class="features">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
-<h3>Nutrición</h3>
-<p>Aprende a comer mejor sin prohibiciones.</p>
-</div>
-
-
-<div class="card">
-<img src="https://github.com/whoisyhago/metodobailon/raw/main/Captura%20de%20pantalla%202026-03-13%20a%20las%208.23.51.png">
-<h3>Entrenamiento</h3>
-<p>Rutinas diseñadas para lograr resultados reales.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
-<h3>Mentalidad</h3>
-<p>Construye disciplina y hábitos duraderos.</p>
-</div>
-
-</div>
-
-</div>
-
+<!-- PILLARS -->
+<section id="programa" class="pillars-section">
+  <div class="pillars-inner">
+    <div class="pillars-header">
+      <span class="label">El método</span>
+      <h2>Tres pilares.<br>Un resultado.</h2>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <img class="pillar-img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Nutrición">
+        <div class="pillar-body">
+          <div class="pillar-num">01 — Nutrición</div>
+          <h3>Come bien, vive mejor</h3>
+          <p>Aprende a nutrir tu cuerpo sin prohibiciones. Pautas reales, adaptadas a tu vida y tus gustos.</p>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <img class="pillar-img" src="Captura de pantalla 2026-03-13 a las 8.23.51.png" alt="Entrenamiento">
+        <div class="pillar-body">
+          <div class="pillar-num">02 — Entrenamiento</div>
+          <h3>Muévete con propósito</h3>
+          <p>Rutinas diseñadas específicamente para ti. Sin excusas, sin sobreentrenamiento, con resultados visibles.</p>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <img class="pillar-img" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" alt="Mentalidad">
+        <div class="pillar-body">
+          <div class="pillar-num">03 — Mentalidad</div>
+          <h3>Construye la versión que quieres ser</h3>
+          <p>La disciplina, la constancia y la confianza se entrenan. Te ayudo a desarrollarlas paso a paso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<h2>Cómo funciona</h2>
-</div>
-
-<div class="steps">
-
-<div class="step">
-<h3>1. Evaluación</h3>
-<p>Analizamos tu punto de partida y objetivos.</p>
-</div>
-
-<div class="step">
-<h3>2. Plan personalizado</h3>
-<p>Entrenamiento y nutrición adaptados a ti.</p>
-</div>
-
-<div class="step">
-<h3>3. Seguimiento</h3>
-<p>Acompañamiento durante todo el proceso.</p>
-</div>
-
-</div>
-
-</div>
-
+<!-- STEPS -->
+<section class="steps-section">
+  <div class="steps-inner">
+    <span class="label">Cómo funciona</span>
+    <h2>Tres pasos hacia<br>tu transformación</h2>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-number">01</div>
+        <h3>Evaluación inicial</h3>
+        <p>Analizamos tu punto de partida, tus objetivos y tu estilo de vida para entender exactamente qué necesitas.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-number">02</div>
+        <h3>Plan 100% personalizado</h3>
+        <p>Diseñamos tu entrenamiento y tus pautas nutricionales adaptadas a ti, no a una plantilla genérica.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-number">03</div>
+        <h3>Seguimiento continuo</h3>
+        <p>Estoy contigo durante todo el proceso. Ajustamos, evolucionamos y celebramos cada avance juntas.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<section id="resultados" style="background:#fafafa">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Resultados reales</h2>
-</div>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
-<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a">
-<img src="https://images.unsplash.com/photo-1517964603305-11c0f6f66012">
-
-</div>
-
-</div>
-
+<!-- TESTIMONIALS -->
+<section id="resultados" class="testimonials-section">
+  <div class="testimonials-inner">
+    <span class="label">Testimonios</span>
+    <h2>Lo que dicen<br>mis alumnas</h2>
+    <p class="section-sub">Resultados reales de mujeres reales.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"He perdido 8kg sin pasar hambre ni hacer dietas locas. Por fin entiendo cómo funciona mi cuerpo y me siento mejor que nunca."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <div class="author-name">Laura</div>
+            <div class="author-detail">Perdió 8 kg en 3 meses</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Ahora tengo energía para todo el día, disciplina para entrenar y, sobre todo, confianza en mí misma. Ojalá lo hubiera descubierto antes."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">Marta</div>
+            <div class="author-detail">4 meses en el programa</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"No solo cambió mi cuerpo, cambió mi mentalidad completamente. Raquel no es solo una coach, es alguien que de verdad cree en ti."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <div class="author-name">Ana</div>
+            <div class="author-detail">6 meses de transformación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<h2>Testimonios</h2>
-</div>
-
-<div class="testimonials">
-
-<div class="testimonial">
-<p>"He perdido 8kg sin dietas locas y me siento mejor que nunca."</p>
-<strong>Laura</strong>
-</div>
-
-<div class="testimonial">
-<p>"Ahora tengo energía, disciplina y confianza."</p>
-<strong>Marta</strong>
-</div>
-
-<div class="testimonial">
-<p>"No solo cambió mi cuerpo, cambió mi mentalidad."</p>
-<strong>Ana</strong>
-</div>
-
-</div>
-
-</div>
-
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="faq-inner">
+    <span class="label">FAQ</span>
+    <h2>Tus dudas,<br>resueltas</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          ¿Necesito experiencia entrenando?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">No, para nada. El programa se adapta a cualquier nivel, desde cero. Empieces donde empieces, hay un plan para ti.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          ¿El programa incluye nutrición?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Sí. Recibirás pautas nutricionales personalizadas adaptadas a tus gustos y tu día a día, sin prohibiciones ni alimentos demonizados.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          ¿Cuándo veré resultados?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Los primeros cambios —energía, bienestar, sensaciones— suelen aparecer en las primeras 2-3 semanas. Los cambios físicos visibles en 4-8 semanas, dependiendo del punto de partida.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          ¿Es online o presencial?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Trabajamos tanto de forma online como presencial. Sea cual sea tu situación, encontramos el formato que mejor se adapta a ti.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          ¿Cuánto tiempo al día tengo que dedicarle?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Las sesiones están diseñadas para ser efectivas en 45-60 minutos. El programa se adapta a tu disponibilidad real, no al revés.</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-<section id="faq">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Preguntas frecuentes</h2>
-</div>
-
-<div class="faq-item">
-<h4>¿Necesito experiencia entrenando?</h4>
-<div class="faq-answer">No. El programa se adapta a cualquier nivel.</div>
-</div>
-
-<div class="faq-item">
-<h4>¿Incluye nutrición?</h4>
-<div class="faq-answer">Sí, recibirás pautas nutricionales adaptadas.</div>
-</div>
-
-<div class="faq-item">
-<h4>¿Cuándo veré resultados?</h4>
-<div class="faq-answer">Los primeros cambios suelen aparecer en pocas semanas.</div>
-</div>
-
-</div>
-
+<!-- CTA -->
+<section id="contacto" class="cta-section">
+  <span class="label">Últimas plazas disponibles</span>
+  <h2>Empieza tu transformación hoy</h2>
+  <p>Plazas limitadas cada mes. No lo dejes para después.</p>
+  <a class="btn-white" href="https://instagram.com/raquellbailon" target="_blank">Escríbeme en Instagram</a>
+  <p class="urgency">Sin compromiso · Respuesta en menos de 24h</p>
 </section>
 
-
-
-<section id="contacto" class="cta">
-
-<h2>Empieza tu transformación</h2>
-
-<p>Plazas limitadas cada mes.</p>
-
-<br>
-
-<a class="btn" href="https://instagram.com/raquellbailon">Enviar mensaje en Instagram</a>
-
-</section>
-
-
-
+<!-- FOOTER -->
 <footer>
-
-<p>© 2026 Raquel Bailón Coaching</p>
-
-<p>Instagram: @raquellbailon</p>
-
+  <p>© 2026 Raquel Bailón Coaching · <a href="https://instagram.com/raquellbailon" target="_blank">@raquellbailon</a></p>
 </footer>
 
-
-
-<script>
-
-document.querySelectorAll(".faq-item").forEach(item=>{
-item.addEventListener("click",()=>{
-let answer=item.querySelector(".faq-answer")
-answer.style.display=
-answer.style.display==="block"?"none":"block"
-})
-})
-
-</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
